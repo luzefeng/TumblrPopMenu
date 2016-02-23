@@ -28,4 +28,5 @@ class ViewController: UIViewController, PopMenuDelegate {
 ```
 
 ##效果图
+![](https://github.com/luzefeng/TumblrPopMenu/blob/master/PopMenu.gif)
 ![](https://github.com/luzefeng/TumblrPopMenu/blob/master/Simulator%20Screen%20Shot%202016%E5%B9%B42%E6%9C%8823%E6%97%A5%20%E4%B8%8A%E5%8D%8812.20.19.png)

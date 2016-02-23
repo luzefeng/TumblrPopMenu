@@ -213,6 +213,7 @@
 				TargetAttributes = {
 					89C66C441C7B3D8100A900EF = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 557XX2G4GZ;
 					};
 					89C66C5B1C7B3D8200A900EF = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -421,9 +422,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Lu (EKTN96KCU6)";
 				INFOPLIST_FILE = TumblrPopMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lu.free.tumblrpopmenu.TumblrPopMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lu.free.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -432,9 +434,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TumblrPopMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lu.free.tumblrpopmenu.TumblrPopMenu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lu.free.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -506,6 +509,7 @@
 				89C66C721C7B3D8200A900EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89C66C731C7B3D8200A900EF /* Build configuration list for PBXNativeTarget "TumblrPopMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +518,7 @@
 				89C66C751C7B3D8200A900EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		89C66C761C7B3D8200A900EF /* Build configuration list for PBXNativeTarget "TumblrPopMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				89C66C781C7B3D8200A900EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

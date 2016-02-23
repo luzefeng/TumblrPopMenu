@@ -22,6 +22,7 @@ class PopMenu: UIView{
     var centerLow: [CGPoint]!
     var centerMenu: [CGPoint]!
     var delegate: PopMenuDelegate?
+    var isHidding: Bool = false
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -61,10 +62,10 @@ class PopMenu: UIView{
     }
     
     private func initImageView(){
-        let image = UIImage(named: "button-text")
+        let image = UIImage(named: "button-chat")
         let frame = CGRectMake(0, 0, image!.size.width, image!.size.height)
         textButton = UIButton(frame: frame)
-        textButton.setBackgroundImage(image, forState: .Normal)
+        textButton.setBackgroundImage(UIImage(named: "button-text")!, forState: .Normal)
 
         photoButton = UIButton(frame: frame)
         photoButton.setBackgroundImage(UIImage(named: "button-photo")!, forState: .Normal)
@@ -97,7 +98,7 @@ class PopMenu: UIView{
     
     private func setupView(){
         self.hidden = true
-        backgroundView.backgroundColor = UIColor(red: 46/255, green: 63/255, blue: 83/255, alpha: 0.9)
+        backgroundView.backgroundColor = UIColor(red: 61/255, green: 77/255, blue: 100/255, alpha: 0.95)
         backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "handleTap:"))
         backgroundView.userInteractionEnabled = true
         
@@ -138,13 +139,18 @@ class PopMenu: UIView{
     
     private func hideMenuView(){
         print("hideMenuView")
+        if isHidding{
+            return
+        }
         
+        isHidding = true
         //Nevermind button
         nevermindButton.center = centerMenu[6]
         UIView.animateWithDuration(0.3, delay: 0.3, options: UIViewAnimationOptions.CurveEaseOut, animations: { () -> Void in
             self.nevermindButton.center = self.centerLow[3]
             }) { (finished) -> Void in
                 self.nevermindButton.hidden = true
+                self.isHidding = false
         }
         
         // Photo Image

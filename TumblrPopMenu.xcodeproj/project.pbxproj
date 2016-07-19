@@ -213,7 +213,6 @@
 				TargetAttributes = {
 					89C66C441C7B3D8100A900EF = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 557XX2G4GZ;
 					};
 					89C66C5B1C7B3D8200A900EF = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -422,7 +421,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jimmy Lu (EKTN96KCU6)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = TumblrPopMenu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lu.free.test;

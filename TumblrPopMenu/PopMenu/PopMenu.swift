@@ -99,21 +99,21 @@ class PopMenu: UIView{
     private func setupView(){
         self.hidden = true
         backgroundView.backgroundColor = UIColor(red: 61/255, green: 77/255, blue: 100/255, alpha: 0.95)
-        backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: "handleTap:"))
+        backgroundView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(PopMenu.handleTap(_:))))
         backgroundView.userInteractionEnabled = true
         
         nevermindButton.hidden = true
         nevermindButton.userInteractionEnabled = true
         nevermindButton.backgroundColor = UIColor(red: 61/255, green: 77/255, blue: 97/255, alpha: 1.0)
         nevermindButton.tintColor = UIColor(red: 133/255, green: 141/255, blue: 152/255, alpha: 1.0)
-        nevermindButton.addTarget(self, action: "handleTap:", forControlEvents: .TouchUpInside)
+        nevermindButton.addTarget(self, action: #selector(PopMenu.handleTap(_:)), forControlEvents: .TouchUpInside)
         
-        textButton.addTarget(self, action: "clickMenu:", forControlEvents: .TouchUpInside)
-        photoButton.addTarget(self, action: "clickMenu:", forControlEvents: .TouchUpInside)
-        quoteButton.addTarget(self, action: "clickMenu:", forControlEvents: .TouchUpInside)
-        linkButton.addTarget(self, action: "clickMenu:", forControlEvents: .TouchUpInside)
-        chatButton.addTarget(self, action: "clickMenu:", forControlEvents: .TouchUpInside)
-        videoButton.addTarget(self, action: "clickMenu:", forControlEvents: .TouchUpInside)
+        textButton.addTarget(self, action: #selector(PopMenu.clickMenu(_:)), forControlEvents: .TouchUpInside)
+        photoButton.addTarget(self, action: #selector(PopMenu.clickMenu(_:)), forControlEvents: .TouchUpInside)
+        quoteButton.addTarget(self, action: #selector(PopMenu.clickMenu(_:)), forControlEvents: .TouchUpInside)
+        linkButton.addTarget(self, action: #selector(PopMenu.clickMenu(_:)), forControlEvents: .TouchUpInside)
+        chatButton.addTarget(self, action: #selector(PopMenu.clickMenu(_:)), forControlEvents: .TouchUpInside)
+        videoButton.addTarget(self, action: #selector(PopMenu.clickMenu(_:)), forControlEvents: .TouchUpInside)
 
         self.addSubview(backgroundView)
         self.addSubview(textButton)
